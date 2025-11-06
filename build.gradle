@@ -2,7 +2,6 @@ plugins {
     id 'dev.architectury.loom' version '1.11-SNAPSHOT' apply false
     id 'architectury-plugin' version '3.4-SNAPSHOT'
     id 'com.gradleup.shadow' version '8.3.6' apply false
-    id "com.hypherionmc.modutils.modfusioner" version "1.0.+"
 }
 
 architectury {
@@ -12,13 +11,6 @@ architectury {
 allprojects {
     group = rootProject.maven_group
     version = rootProject.mod_version
-
-    repositories {
-        maven {
-            name = "ParchmentMC"
-            url = "https://maven.parchmentmc.org"
-        }
-    }
 }
 
 subprojects {
@@ -37,18 +29,6 @@ subprojects {
         // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
         // See https://docs.gradle.org/current/userguide/declaring_repositories.html
         // for more information about repositories.
-        maven { url "https://maven.shedaniel.me/" }
-        maven { url "https://maven.terraformersmc.com/releases/" }
-        maven {
-            url = uri('https://mcef-download.cinemamod.com/repositories/releases')
-        }
-        maven {
-            url = uri('https://mcef-download.cinemamod.com/repositories/snapshots')
-        }
-        maven {
-            name = "Modrinth"
-            url = "https://api.modrinth.com/maven"
-        }
     }
 
     loom {
@@ -57,10 +37,7 @@ subprojects {
 
     dependencies {
         minecraft "net.minecraft:minecraft:$rootProject.minecraft_version"
-        mappings loom.layered() {
-            officialMojangMappings()
-            parchment("org.parchmentmc.data:parchment-${rootProject.minecraft_version}:2023.09.03@zip")
-        }
+        mappings loom.officialMojangMappings()
     }
 
     java {
@@ -94,39 +71,4 @@ subprojects {
             // retrieving dependencies.
         }
     }
-}
-
-fusioner {
-    packageGroup = project.group // Package group of the merged jar. For example com.mymod.awesome
-    mergedJarName = "BluemapViewer-1.20.1" // The name of the output jar
-    outputDirectory = "artifacts/fused" // Where the merged jar will be stored. Defaults to artifacts/fused
-    jarVersion = 0.3 // The version of the mod/jar
-
-    // Forge Project
-    forge {
-        projectName = "forge" // The name of the project that contains the forge code
-        inputTaskName = "jar" // The name of the build task for the forge project
-        // OR
-        // inputFile = "Forge/build/libs/MyMod-1.0.jar" // Use a custom jar input
-
-        // Mixin configuration files
-        // Only required if the plugin doesn't detect it directly
-        mixin "bluemap_viewer.mixins.json"
-
-        // Packages that need to be relocated to the specific platform
-        addRelocate "me.hypherionmc.mcdiscordformatter", "forge.me.hypherionmc.mcdiscordformatter"
-    }
-
-    // Fabric Project
-    fabric {
-        projectName = "fabric" // The name of the project that contains the fabric code
-        inputTaskName = "remapJar" // The name of the build task for the fabric project
-        // OR
-        // inputFile = "Fabric/build/libs/MyMod-Fabric-1.0.jar" // Use a custom jar input
-
-        // Packages that need to be relocated to the specific platform
-        addRelocate "me.hypherionmc.mcdiscordformatter", "fabric.me.hypherionmc.mcdiscordformatter"
-    }
-
-    relocateDuplicate "com.hypherionmc.sdlink.shaded"
 }

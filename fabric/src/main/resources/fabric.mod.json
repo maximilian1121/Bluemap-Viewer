@@ -1,22 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "bluemap-viewer",
+  "id": "bluemap_viewer",
   "version": "${version}",
   "name": "Bluemap Viewer",
-  "description": "View your servers bluemap from inside the game!",
+  "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Max"
+    "Me!"
   ],
-  "contact": {},
-  "license": "MIT",
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
   "icon": "assets/bluemap_viewer/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "ca.maximilian.bluemap_viewer.fabric.BluemapViewerFabric"
+      "ca.maximilian.bluemap_viewer.fabric.ExampleModFabric"
     ],
-    "modmenu": [
-      "ca.maximilian.bluemap_viewer.fabric.ModMenuIntegration"
+    "client": [
+      "ca.maximilian.bluemap_viewer.fabric.client.ExampleModFabricClient"
     ]
   },
   "mixins": [
@@ -24,12 +27,12 @@
   ],
   "depends": {
     "fabricloader": ">=0.17.3",
-    "minecraft": "~1.20.1",
+    "minecraft": "~1.20.4",
     "java": ">=17",
-    "architectury": ">=9.2.14",
-    "fabric-api": "*",
-    "mcef": ">=2.1.6-1.20.1",
-    "midnightlib": ">=1.4.1"
+    "architectury": ">=11.1.17",
+    "fabric-api": "*"
   },
-  "suggests": {}
+  "suggests": {
+    "another-mod": "*"
+  }
 }

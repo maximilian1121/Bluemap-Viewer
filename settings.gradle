@@ -4,9 +4,6 @@ pluginManagement {
         maven { url = 'https://maven.architectury.dev/' }
         maven { url = 'https://files.minecraftforge.net/maven/' }
         gradlePluginPortal()
-        maven {
-            url = uri("https://maven.firstdarkdev.xyz/releases")
-        }
     }
 }
 
@@ -15,3 +12,4 @@ rootProject.name = 'bluemap_viewer'
 include 'common'
 include 'fabric'
 include 'forge'
+include 'neoforge'

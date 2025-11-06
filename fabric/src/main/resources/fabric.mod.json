@@ -8,7 +8,7 @@
     "Max"
   ],
   "contact": {},
-  "license": "All Rights Reserved",
+  "license": "MIT",
   "icon": "assets/bluemap_viewer/icon.png",
   "environment": "*",
   "entrypoints": {

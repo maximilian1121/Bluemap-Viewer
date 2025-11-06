@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bluemap_viewer.iml" filepath="$PROJECT_DIR$/.idea/modules/bluemap_viewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/bluemap_viewer.common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/bluemap_viewer.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/bluemap_viewer.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/bluemap_viewer.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/bluemap_viewer.common.test.iml" filepath="$PROJECT_DIR$/.idea/modules/common/bluemap_viewer.common.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/bluemap_viewer.fabric.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/bluemap_viewer.fabric.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/bluemap_viewer.fabric.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/bluemap_viewer.fabric.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/bluemap_viewer.fabric.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/bluemap_viewer.fabric.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/bluemap_viewer.forge.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/bluemap_viewer.forge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/bluemap_viewer.forge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/bluemap_viewer.forge.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/bluemap_viewer.forge.test.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/bluemap_viewer.forge.test.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,49 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "bluemap_viewer"
+version = "${version}"
+displayName = "Bluemap Viewer"
+authors = "Max"
+description = '''
+View your servers bluemap from inside the game!
+'''
+logoFile = "assets/bluemap_viewer/icon.png"
+
+[[dependencies.bluemap_viewer]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bluemap_viewer]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bluemap_viewer]]
+modId = "architectury"
+mandatory = true
+versionRange = "[9.2.14,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.bluemap_viewer]]
+modId = "midnightlib"
+versionRange = "[1.4.2,)"
+mandatory = true
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.bluemap_viewer]]
+modId = "mcef"
+versionRange = "[2.1.1,)"
+mandatory = true
+ordering = "AFTER"
+side = "CLIENT"

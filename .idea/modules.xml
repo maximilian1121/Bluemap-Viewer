@@ -12,6 +12,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/bluemap_viewer.forge.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/bluemap_viewer.forge.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/bluemap_viewer.forge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/bluemap_viewer.forge.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/bluemap_viewer.forge.test.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/bluemap_viewer.forge.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/bluemap_viewer.neoforge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/bluemap_viewer.neoforge.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/bluemap_viewer.neoforge.test.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/bluemap_viewer.neoforge.test.iml" />
     </modules>
   </component>
 </project>
